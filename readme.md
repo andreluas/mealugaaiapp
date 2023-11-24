@@ -20,9 +20,14 @@ Foi utilizado Swagger para realizar a documentação e modelagem dos endpoints d
 ```
 localhost:3000/api
 ```
-PROD:
+Swagger:
 ```
 https://mealugaaiapp.cyclic.app/api
+```
+<br />
+App:
+```
+https://mealugaaiapp.vercel.app
 ```
 
 ## 🧑‍💻 Como rodar o projeto
