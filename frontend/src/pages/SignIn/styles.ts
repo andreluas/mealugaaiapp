@@ -38,7 +38,7 @@ export const InputContainer = styled.div`
   flex-direction: column;
   gap: 25px;
 
-  max-width: 485px;
+  min-width: 485px;
   width: 100%;
 
   input {

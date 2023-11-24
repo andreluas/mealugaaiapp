@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import { SignIn } from "./pages/SignIn";
 import { SignUp } from "./pages/SignUp";
 import { NotFound } from "./pages/NotFound";
@@ -8,13 +8,16 @@ import { Profile } from "./pages/Profile";
 export function Router() {
     return (
         <Routes>
-            <Route path="*" element={<NotFound />} />
+            <Route path="/" element={<Navigate to="/auth/login" />} />
+
             <Route path="/auth">
                 <Route path="login" element={<SignIn />} />
                 <Route path="register" element={<SignUp />} />
             </Route>
             <Route path="/home" element={<Home />} />
             <Route path="/profile" element={<Profile />} />
+            
+            <Route path="*" element={<NotFound />} />
         </Routes>
     )
 }
