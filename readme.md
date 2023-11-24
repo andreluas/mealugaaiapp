@@ -24,7 +24,6 @@ Swagger:
 ```
 https://mealugaaiapp.cyclic.app/api
 ```
-<br />
 App:
 ```
 https://mealugaaiapp.vercel.app
