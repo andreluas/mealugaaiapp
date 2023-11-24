@@ -2,25 +2,23 @@ import { ContainerNav, HeaderContainer, LogoContainer, Nav } from "./styles";
 import { NavLink } from 'react-router-dom';
 
 export function Header() {
-    return (<>
+    return (
+      <>
         <HeaderContainer>
-            <LogoContainer>
-                <h1>mealugaaí</h1>
-            </LogoContainer>
+          <LogoContainer>
+            <h1>mealugaaí</h1>
+          </LogoContainer>
 
-            <ContainerNav>
-                <Nav>
-                    <NavLink to="/home">
-                        home
-                    </NavLink>
+          <ContainerNav>
+            <Nav>
+              <NavLink to="/home">home</NavLink>
 
-                    <NavLink to="/profile">
-                        meu perfil
-                    </NavLink>
+              <NavLink to="/profile">meu perfil</NavLink>
 
-                    <a href="">minhas locações</a>
-                </Nav>
-            </ContainerNav>
+              <NavLink to="#">minhas locações</NavLink>
+            </Nav>
+          </ContainerNav>
         </HeaderContainer>
-    </>)
+      </>
+    );
 }
